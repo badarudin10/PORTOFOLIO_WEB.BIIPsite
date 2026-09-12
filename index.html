@@ -932,343 +932,977 @@
     <a href="https://wa.me/62881080698977?text=Halo%20Badarudin%20(BiipSite%20Digital),%20saya%20tertarik%20untuk%20konsultasi%20pembuatan%20website/app." target="_blank" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform animate-bounce" title="Chat WhatsApp Direct">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+    
+// =========================================================
+// JAVASCRIPT APPLICATION LOGIC
+// =========================================================
+<script>
+// =========================================================
+// DATA PROJECTS DETAILS FOR MODAL SHOWCASE
+// =========================================================
 
-    <!-- JavaScript Application Logic -->
-    <script>
-        // Data Projects Details for Modal Showcase
-        const projectsData = {
-            'uptd-farmasi': {
-                title: 'Sistem Management & Portal Publik UPTD Farmasi Kota Tangsel',
-                category: 'Web App & Admin Dashboard System',
-                badge: 'Sistem Instansi Resmi',
-                description: 'Aplikasi web manajemen terpadu yang dirancang untuk UPTD Farmasi Kota Tangerang Selatan. Memiliki fitur registrasi tamu digital, cetak otomatis bukti pengambilan obat PDF, integrasi konsultasi WhatsApp, data pegawai, serta dashboard analytics monitoring antrian.',
-                images: [
-                    { url: '1000053359.jpg', title: 'Portal Registrasi Tamu & Galeri Kegiatan Instansi' },
-                    { url: '1000053349.jpg', title: 'Tampilan Web App Mobile & Aksi Cepat Services' },
-                    { url: '1000053351.jpg', title: 'Sistem Status & Bukti Tamu, Tabel Obat & Output PDF' },
-                    { url: '1000053353.jpg', title: 'Form Layanan Konsultasi Direct WhatsApp' },
-                    { url: '1000053355.jpg', title: 'Modul Profil & Manajemen Data Pegawai' },
-                    { url: '1000053361.jpg', title: 'Dashboard Admin Panel Analytics & Control' }
-                ],
-                features: [
-                    'Form Registrasi Tamu & Antrian Real-Time',
-                    'Integrasi Cetak Lampiran & Bukti Pengambilan Obat (PDF Engine)',
-                    'Dashboard Admin Pemantauan Antrian & Grafik Tren 7 Hari',
-                    'Modul Kelola Galeri Kegiatan & Artikel Menu',
-                    'Integrasi Kirim Konsultasi & Pengaduan Direct ke WhatsApp Penanggung Jawab',
-                    'Profil Pegawai & Penanggung Jawab Program'
-                ]
+const projectsData = {
+
+    // =====================================================
+    // PROJECT 1
+    // =====================================================
+
+    'uptd-farmasi': {
+        title: 'Sistem Management & Portal Publik UPTD Farmasi Kota Tangsel',
+        category: 'Web App & Admin Dashboard System',
+        badge: 'Sistem Instansi Resmi',
+
+        description:
+            'Aplikasi web manajemen terpadu yang dirancang untuk UPTD Farmasi Kota Tangerang Selatan. Memiliki fitur registrasi tamu digital, cetak otomatis bukti pengambilan obat PDF, integrasi konsultasi WhatsApp, data pegawai, serta dashboard analytics monitoring antrian.',
+
+        images: [
+            {
+                url: '1000053359.jpg',
+                title: 'Portal Registrasi Tamu & Galeri Kegiatan Instansi'
             },
-            'cemilan-nasihah': {
-                title: 'Cemilan Nasihah - Culinary E-Commerce Store',
-                category: 'E-Commerce / UMKM Kuliner',
-                badge: 'Toko Online WhatsApp',
-                description: 'Website toko online interaktif untuk produk oleh-oleh khas Pandeglang Banten (Cemilan Nasihah). Tampilan modern khas estetika makanan dengan catalog interaktif, keranjang belanja, dan pemesanan otomatis terhubung ke WhatsApp.',
-                images: [
-                    { url: '1000053363.jpg', title: 'E-Commerce Storefront & Showcase Produk Kuliner' }
-                ],
-                features: [
-                    'Hero Showcase Banner Elegan',
-                    'Katalog Produk Rengginang & Peyek dengan Tombol Keranjang Quick Add',
-                    'Navigasi Pilihan Menu & Minuman Segar',
-                    'Counter Keranjang Belanja Interaktif',
-                    'Direct Checkout ke WhatsApp Penjual'
-                ]
+            {
+                url: '1000053349.jpg',
+                title: 'Tampilan Web App Mobile & Aksi Cepat Services'
             },
-            'biip-flowerhorn': {
-                title: 'BIIP Flowerhorn Aquatic - Store & Educational Hub',
-                category: 'Premium E-Commerce & Educational Portal',
-                badge: 'Storefront & Education Hub',
-                description: 'Portal e-commerce dan edukasi akuakultur ikan hias Louhan. Dilengkapi katalog produk pilihan terkurasi, sistem rating ulasan terverifikasi, serta pusat edukasi artikel yang dapat diperbarui dinamis.',
-                images: [
-                    { url: '1000053383.jpg', title: 'Hero Landing Page & Feature Badges' },
-                    { url: '1000053385.jpg', title: 'Katalog Koleksi Produk & Tombol Tambah Keranjang' },
-                    { url: '1000053393.jpg', title: 'Pusat Artikel Edukasi Akuakultur & Footer Support' }
-                ],
-                features: [
-                    'Storefront Design Eksklusif dengan Dark Minimalist Theme',
-                    'Katalog Produk Louhan dengan Harga, Badges, dan Quick Cart Button',
-                    'Modul Pusat Edukasi (Artikel & Panduan Perawatan Louhan)',
-                    'Widget Live Consultation Floating WhatsApp',
-                    'Review Rating Terverifikasi Customer'
-                ]
+            {
+                url: '1000053351.jpg',
+                title: 'Sistem Status & Bukti Tamu, Tabel Obat & Output PDF'
+            },
+            {
+                url: '1000053353.jpg',
+                title: 'Form Layanan Konsultasi Direct WhatsApp'
+            },
+            {
+                url: '1000053355.jpg',
+                title: 'Modul Profil & Manajemen Data Pegawai'
+            },
+            {
+                url: '1000053361.jpg',
+                title: 'Dashboard Admin Panel Analytics & Control'
             }
-        },
+        ],
 
-        'datasheet-bamboo': {
-                title: 'Datasheet Laporan Penjualan Bamboo',
-                category: 'Dashboard & Data Management',
-                badge: 'Laporan Penjualan',
-                description: 'Datasheet laporan penjualan bamboo yang dirancang untuk membantu pencatatan, pengolahan, pemantauan, dan penyajian data penjualan secara lebih terstruktur dan mudah digunakan.',
-                images: [
-                    { url: '1000053365.jpg', title: 'Dashboard Datasheet Laporan Penjualan Bamboo' },
-                    { url: '1000053367.jpg', title: 'Data Penjualan Bamboo' },
-                    { url: '1000053369.jpg', title: 'Rekap & Monitoring Laporan Penjualan' }
-                ],
-                features: [
-                    'Pencatatan Data Penjualan Secara Terstruktur',
-                    'Pengelolaan Data Produk dan Transaksi',
-                    'Rekap Laporan Penjualan',
-                    'Monitoring Data Secara Lebih Mudah',
-                    'Tampilan Datasheet yang Praktis dan Responsif'
-                ]
+        features: [
+            'Form Registrasi Tamu & Antrian Real-Time',
+            'Integrasi Cetak Lampiran & Bukti Pengambilan Obat (PDF Engine)',
+            'Dashboard Admin Pemantauan Antrian & Grafik Tren 7 Hari',
+            'Modul Kelola Galeri Kegiatan & Artikel Menu',
+            'Integrasi Kirim Konsultasi & Pengaduan Direct ke WhatsApp Penanggung Jawab',
+            'Profil Pegawai & Penanggung Jawab Program'
+        ]
+    },
+
+
+    // =====================================================
+    // PROJECT 2
+    // =====================================================
+
+    'cemilan-nasihah': {
+        title: 'Cemilan Nasihah - Culinary E-Commerce Store',
+        category: 'E-Commerce / UMKM Kuliner',
+        badge: 'Toko Online WhatsApp',
+
+        description:
+            'Website toko online interaktif untuk produk oleh-oleh khas Pandeglang Banten (Cemilan Nasihah). Tampilan modern khas estetika makanan dengan catalog interaktif, keranjang belanja, dan pemesanan otomatis terhubung ke WhatsApp.',
+
+        images: [
+            {
+                url: '1000053363.jpg',
+                title: 'E-Commerce Storefront & Showcase Produk Kuliner'
+            }
+        ],
+
+        features: [
+            'Hero Showcase Banner Elegan',
+            'Katalog Produk Rengginang & Peyek dengan Tombol Keranjang Quick Add',
+            'Navigasi Pilihan Menu & Minuman Segar',
+            'Counter Keranjang Belanja Interaktif',
+            'Direct Checkout ke WhatsApp Penjual'
+        ]
+    },
+
+
+    // =====================================================
+    // PROJECT 3
+    // =====================================================
+
+    'biip-flowerhorn': {
+        title: 'BIIP Flowerhorn Aquatic - Store & Educational Hub',
+        category: 'Premium E-Commerce & Educational Portal',
+        badge: 'Storefront & Education Hub',
+
+        description:
+            'Portal e-commerce dan edukasi akuakultur ikan hias Louhan. Dilengkapi katalog produk pilihan terkurasi, sistem rating ulasan terverifikasi, serta pusat edukasi artikel yang dapat diperbarui dinamis.',
+
+        images: [
+            {
+                url: '1000053383.jpg',
+                title: 'Hero Landing Page & Feature Badges'
             },
-
-            'website-portofolio': {
-                title: 'Website Portofolio',
-                category: 'Professional Portfolio Website',
-                badge: 'Website Portofolio',
-                description: 'Website portofolio profesional untuk menampilkan profil, layanan, keahlian, dan hasil karya secara modern, responsif, dan mudah diakses melalui perangkat desktop maupun smartphone.',
-                images: [
-                    { url: '1000053381.jpg', title: 'Website Portofolio BiipSite Digital' }
-                ],
-                features: [
-                    'Desain Website Modern dan Profesional',
-                    'Responsive untuk HP, Tablet, dan Desktop',
-                    'Section Profil dan Keahlian',
-                    'Portfolio Showcase Project',
-                    'Informasi Layanan',
-                    'Integrasi Kontak WhatsApp',
-                    'Mode Dark & Light'
-                ]
+            {
+                url: '1000053385.jpg',
+                title: 'Katalog Koleksi Produk & Tombol Tambah Keranjang'
             },
+            {
+                url: '1000053393.jpg',
+                title: 'Pusat Artikel Edukasi Akuakultur & Footer Support'
+            }
+        ],
 
-            'belajar-baca-seru': {
-                title: 'Aplikasi Belajar Baca Seru',
-                category: 'Aplikasi Edukasi Interaktif',
-                badge: 'Educational Application',
-                description: 'Aplikasi pembelajaran membaca yang dibuat dengan konsep interaktif dan menyenangkan untuk membantu anak belajar mengenal huruf, kata, serta latihan membaca melalui tampilan yang menarik dan mudah digunakan.',
-                images: [
-                    { url: '1000053415.jpg', title: 'Aplikasi Belajar Baca Seru - Tampilan Utama' },
-                    { url: '1000053419.jpg', title: 'Aplikasi Belajar Baca Seru - Menu Pembelajaran' },
-                    { url: '1000053413.jpg', title: 'Aplikasi Belajar Baca Seru - Materi Belajar' },
-                    { url: '1000053417.jpg', title: 'Aplikasi Belajar Baca Seru - Latihan Membaca' },
-                    { url: '1000053411.jpg', title: 'Aplikasi Belajar Baca Seru - Aktivitas Interaktif' },
-                    { url: '1000053409.jpg', title: 'Aplikasi Belajar Baca Seru - Tampilan Pembelajaran' }
-                ],
-                features: [
-                    'Pembelajaran Membaca Secara Interaktif',
-                    'Materi Belajar yang Mudah Dipahami Anak',
-                    'Latihan Membaca Bertahap',
-                    'Tampilan Ramah Anak',
-                    'Navigasi Pembelajaran yang Sederhana',
-                    'Dirancang untuk Pengalaman Belajar yang Menyenangkan'
-                ]
-            };
+        features: [
+            'Storefront Design Eksklusif dengan Dark Minimalist Theme',
+            'Katalog Produk Louhan dengan Harga, Badges, dan Quick Cart Button',
+            'Modul Pusat Edukasi (Artikel & Panduan Perawatan Louhan)',
+            'Widget Live Consultation Floating WhatsApp',
+            'Review Rating Terverifikasi Customer'
+        ]
+    },
 
-        let activeImageIndex = 0;
-        let currentProject = null;
 
-        function openModal(projectId) {
-            currentProject = projectsData[projectId];
-            if (!currentProject) return;
+    // =====================================================
+    // PROJECT 4
+    // =====================================================
 
-            activeImageIndex = 0;
-            renderModalContent();
+    'datasheet-bamboo': {
+        title: 'Datasheet Laporan Penjualan Bamboo',
+        category: 'Dashboard & Data Management',
+        badge: 'Laporan Penjualan',
 
-            document.getElementById('projectModal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
+        description:
+            'Datasheet laporan penjualan bamboo yang dirancang untuk membantu pencatatan, pengolahan, pemantauan, dan penyajian data penjualan secara lebih terstruktur dan mudah digunakan.',
 
-        function closeModal() {
-            document.getElementById('projectModal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
+        images: [
+            {
+                url: '1000053365.jpg',
+                title: 'Dashboard Datasheet Laporan Penjualan Bamboo'
+            },
+            {
+                url: '1000053367.jpg',
+                title: 'Data Penjualan Bamboo'
+            },
+            {
+                url: '1000053369.jpg',
+                title: 'Rekap & Monitoring Laporan Penjualan'
+            }
+        ],
 
-        function setActiveImage(index) {
-            activeImageIndex = index;
-            renderModalContent();
-        }
+        features: [
+            'Pencatatan Data Penjualan Secara Terstruktur',
+            'Pengelolaan Data Produk dan Transaksi',
+            'Rekap Laporan Penjualan',
+            'Monitoring Data Secara Lebih Mudah',
+            'Tampilan Datasheet yang Praktis dan Responsif'
+        ]
+    },
 
-        function renderModalContent() {
-            const container = document.getElementById('modalContent');
-            const activeImg = currentProject.images[activeImageIndex];
 
-            let thumbnailsHtml = currentProject.images.map((img, idx) => `
-                <button onclick="setActiveImage(${idx})" class="w-16 h-12 rounded-lg overflow-hidden border-2 transition-all ${idx === activeImageIndex ? 'border-cyan-400 scale-105 shadow-md' : 'border-slate-800 opacity-60 hover:opacity-100'}">
-                    <img src="${img.url}" class="w-full h-full object-cover">
-                </button>
-            `).join('');
+    // =====================================================
+    // PROJECT 5
+    // =====================================================
 
-            let featuresHtml = currentProject.features.map(f => `
-                <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                    <i class="fa-solid fa-circle-check text-cyan-400 mt-0.5"></i>
-                    <span>${f}</span>
-                </li>
-            `).join('');
+    'website-portofolio': {
+        title: 'Website Portofolio',
+        category: 'Professional Portfolio Website',
+        badge: 'Website Portofolio',
 
-            container.innerHTML = `
-                <div class="flex flex-col lg:flex-row gap-6">
-                    <!-- Left Image Viewer -->
-                    <div class="lg:w-7/12 space-y-3">
-                        <div class="relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 aspect-[4/3] flex items-center justify-center group">
-                            <img id="mainModalImg" src="${activeImg.url}" class="max-h-full max-w-full object-contain">
-                            <div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-md text-xs text-slate-300 border border-slate-800 flex items-center justify-between">
-                                <span class="truncate">${activeImg.title}</span>
-                                <span class="font-bold text-cyan-400 text-[10px] ml-2 shrink-0">${activeImageIndex + 1} / ${currentProject.images.length}</span>
-                            </div>
-                        </div>
+        description:
+            'Website portofolio profesional untuk menampilkan profil, layanan, keahlian, dan hasil karya secara modern, responsif, dan mudah diakses melalui perangkat desktop maupun smartphone.',
 
-                        <!-- Thumbnails Bar -->
-                        <div class="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar">
-                            ${thumbnailsHtml}
-                        </div>
+        images: [
+            {
+                url: '1000053381.jpg',
+                title: 'Website Portofolio BiipSite Digital'
+            }
+        ],
+
+        features: [
+            'Desain Website Modern dan Profesional',
+            'Responsive untuk HP, Tablet, dan Desktop',
+            'Section Profil dan Keahlian',
+            'Portfolio Showcase Project',
+            'Informasi Layanan',
+            'Integrasi Kontak WhatsApp',
+            'Mode Dark & Light'
+        ]
+    },
+
+
+    // =====================================================
+    // PROJECT 6
+    // =====================================================
+
+    'belajar-baca-seru': {
+        title: 'Aplikasi Belajar Baca Seru',
+        category: 'Aplikasi Edukasi Interaktif',
+        badge: 'Educational Application',
+
+        description:
+            'Aplikasi pembelajaran membaca yang dibuat dengan konsep interaktif dan menyenangkan untuk membantu anak belajar mengenal huruf, kata, serta latihan membaca melalui tampilan yang menarik dan mudah digunakan.',
+
+        images: [
+            {
+                url: '1000053415.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Tampilan Utama'
+            },
+            {
+                url: '1000053419.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Menu Pembelajaran'
+            },
+            {
+                url: '1000053413.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Materi Belajar'
+            },
+            {
+                url: '1000053417.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Latihan Membaca'
+            },
+            {
+                url: '1000053411.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Aktivitas Interaktif'
+            },
+            {
+                url: '1000053409.jpg',
+                title: 'Aplikasi Belajar Baca Seru - Tampilan Pembelajaran'
+            }
+        ],
+
+        features: [
+            'Pembelajaran Membaca Secara Interaktif',
+            'Materi Belajar yang Mudah Dipahami Anak',
+            'Latihan Membaca Bertahap',
+            'Tampilan Ramah Anak',
+            'Navigasi Pembelajaran yang Sederhana',
+            'Dirancang untuk Pengalaman Belajar yang Menyenangkan'
+        ]
+    }
+
+};
+
+
+// =========================================================
+// MODAL STATE
+// =========================================================
+
+let activeImageIndex = 0;
+let currentProject = null;
+
+
+// =========================================================
+// OPEN MODAL
+// =========================================================
+
+function openModal(projectId) {
+
+    console.log('Opening project:', projectId);
+
+    currentProject = projectsData[projectId];
+
+    if (!currentProject) {
+        console.error('Project tidak ditemukan:', projectId);
+        return;
+    }
+
+    activeImageIndex = 0;
+
+    renderModalContent();
+
+    const modal = document.getElementById('projectModal');
+
+    if (!modal) {
+        console.error('Element #projectModal tidak ditemukan.');
+        return;
+    }
+
+    modal.classList.remove('hidden');
+
+    document.body.style.overflow = 'hidden';
+}
+
+
+// =========================================================
+// CLOSE MODAL
+// =========================================================
+
+function closeModal() {
+
+    const modal = document.getElementById('projectModal');
+
+    if (!modal) return;
+
+    modal.classList.add('hidden');
+
+    document.body.style.overflow = 'auto';
+}
+
+
+// =========================================================
+// SET ACTIVE IMAGE
+// =========================================================
+
+function setActiveImage(index) {
+
+    if (!currentProject) return;
+
+    if (
+        index < 0 ||
+        index >= currentProject.images.length
+    ) {
+        return;
+    }
+
+    activeImageIndex = index;
+
+    renderModalContent();
+}
+
+
+// =========================================================
+// RENDER MODAL CONTENT
+// =========================================================
+
+function renderModalContent() {
+
+    if (!currentProject) return;
+
+    const container =
+        document.getElementById('modalContent');
+
+    if (!container) {
+        console.error('Element #modalContent tidak ditemukan.');
+        return;
+    }
+
+    const activeImg =
+        currentProject.images[activeImageIndex];
+
+    if (!activeImg) return;
+
+
+    // -----------------------------------------------------
+    // THUMBNAILS
+    // -----------------------------------------------------
+
+    const thumbnailsHtml =
+        currentProject.images
+            .map((img, idx) => {
+
+                return `
+                    <button
+                        type="button"
+                        onclick="setActiveImage(${idx})"
+                        class="w-16 h-12 rounded-lg overflow-hidden border-2 transition-all ${
+                            idx === activeImageIndex
+                                ? 'border-cyan-400 scale-105 shadow-md'
+                                : 'border-slate-800 opacity-60 hover:opacity-100'
+                        }"
+                    >
+                        <img
+                            src="${img.url}"
+                            alt="${img.title}"
+                            class="w-full h-full object-cover"
+                        >
+                    </button>
+                `;
+
+            })
+            .join('');
+
+
+    // -----------------------------------------------------
+    // FEATURES
+    // -----------------------------------------------------
+
+    const featuresHtml =
+        currentProject.features
+            .map(feature => {
+
+                return `
+                    <li class="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
+                        <i class="fa-solid fa-circle-check text-cyan-400 mt-0.5"></i>
+                        <span>${feature}</span>
+                    </li>
+                `;
+
+            })
+            .join('');
+
+
+    // -----------------------------------------------------
+    // MODAL HTML
+    // -----------------------------------------------------
+
+    container.innerHTML = `
+
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- LEFT IMAGE VIEWER -->
+
+            <div class="lg:w-7/12 space-y-3">
+
+                <div
+                    class="relative bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 aspect-[4/3] flex items-center justify-center group"
+                >
+
+                    <img
+                        id="mainModalImg"
+                        src="${activeImg.url}"
+                        alt="${activeImg.title}"
+                        class="max-h-full max-w-full object-contain"
+                    >
+
+                    <div
+                        class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-xl bg-slate-900/80 backdrop-blur-md text-xs text-slate-300 border border-slate-800 flex items-center justify-between"
+                    >
+
+                        <span class="truncate">
+                            ${activeImg.title}
+                        </span>
+
+                        <span
+                            class="font-bold text-cyan-400 text-[10px] ml-2 shrink-0"
+                        >
+                            ${activeImageIndex + 1}
+                            /
+                            ${currentProject.images.length}
+                        </span>
+
                     </div>
 
-                    <!-- Right Specs & Info -->
-                    <div class="lg:w-5/12 space-y-4">
-                        <div>
-                            <span class="px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-400 font-bold text-[10px] uppercase tracking-wider">
-                                ${currentProject.badge}
-                            </span>
-                            <h3 class="text-2xl font-extrabold text-white mt-2 leading-tight">${currentProject.title}</h3>
-                            <p class="text-xs text-cyan-400 font-medium">${currentProject.category}</p>
-                        </div>
-
-                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                            ${currentProject.description}
-                        </p>
-
-                        <div class="pt-2">
-                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Fitur Utama Sistem:</h4>
-                            <ul class="space-y-1.5">
-                                ${featuresHtml}
-                            </ul>
-                        </div>
-
-                        <div class="pt-4">
-                            <a href="https://wa.me/62881080698977?text=Halo%20Badarudin,%20saya%20tertarik%20membuat%20sistem/website%20seperti%20${encodeURIComponent(currentProject.title)}" target="_blank" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg">
-                                <i class="fa-brands fa-whatsapp text-base"></i>
-                                <span>Pesan Sistem Seperti Ini</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            `;
+
+
+                <!-- THUMBNAILS -->
+
+                <div
+                    class="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar"
+                >
+                    ${thumbnailsHtml}
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT INFORMATION -->
+
+            <div class="lg:w-5/12 space-y-4">
+
+                <div>
+
+                    <span
+                        class="px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-400 font-bold text-[10px] uppercase tracking-wider"
+                    >
+                        ${currentProject.badge}
+                    </span>
+
+                    <h3
+                        class="text-2xl font-extrabold text-white mt-2 leading-tight"
+                    >
+                        ${currentProject.title}
+                    </h3>
+
+                    <p
+                        class="text-xs text-cyan-400 font-medium"
+                    >
+                        ${currentProject.category}
+                    </p>
+
+                </div>
+
+
+                <p
+                    class="text-xs sm:text-sm text-slate-300 leading-relaxed"
+                >
+                    ${currentProject.description}
+                </p>
+
+
+                <!-- FEATURES -->
+
+                <div class="pt-2">
+
+                    <h4
+                        class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2"
+                    >
+                        Fitur Utama Sistem:
+                    </h4>
+
+                    <ul class="space-y-1.5">
+                        ${featuresHtml}
+                    </ul>
+
+                </div>
+
+
+                <!-- WHATSAPP CTA -->
+
+                <div class="pt-4">
+
+                    <a
+                        href="https://wa.me/62881080698977?text=Halo%20Badarudin,%20saya%20tertarik%20membuat%20sistem/website%20seperti%20${encodeURIComponent(currentProject.title)}"
+                        target="_blank"
+                        class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg"
+                    >
+
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+
+                        <span>
+                            Pesan Sistem Seperti Ini
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    `;
+}
+
+
+// =========================================================
+// CLOSE MODAL WHEN CLICKING OVERLAY
+// =========================================================
+
+const projectModal =
+    document.getElementById('projectModal');
+
+if (projectModal) {
+
+    projectModal.addEventListener('click', function(e) {
+
+        if (e.target === this) {
+            closeModal();
         }
 
-        // Close Modal on Overlay Click
-        document.getElementById('projectModal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
+    });
+
+}
+
+
+// =========================================================
+// PORTFOLIO CATEGORY FILTER
+// =========================================================
+
+const filterBtns =
+    document.querySelectorAll('.filter-btn');
+
+const projectCards =
+    document.querySelectorAll('.project-card');
+
+
+filterBtns.forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+        // Reset semua tombol
+
+        filterBtns.forEach(button => {
+
+            button.classList.remove(
+                'bg-cyan-500',
+                'text-white',
+                'shadow-md'
+            );
+
+            button.classList.add(
+                'bg-slate-200',
+                'dark:bg-slate-800',
+                'text-slate-700',
+                'dark:text-slate-300'
+            );
+
         });
 
-        // Portfolio Category Filter Buttons
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('bg-cyan-500', 'text-white', 'shadow-md');
-                    b.classList.add('bg-slate-200', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
-                });
-                btn.classList.remove('bg-slate-200', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
-                btn.classList.add('bg-cyan-500', 'text-white', 'shadow-md');
+        // Aktifkan tombol yang diklik
 
-                const filter = btn.dataset.filter;
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
+        btn.classList.remove(
+            'bg-slate-200',
+            'dark:bg-slate-800',
+            'text-slate-700',
+            'dark:text-slate-300'
+        );
 
-        // Interactive Price Estimator
-        function calculatePrice() {
-            let total = 0;
-            
-            // Base Web Type Price
-            const selectedType = document.querySelector('input[name="webType"]:checked');
-            if (selectedType) {
-                total += parseInt(selectedType.dataset.price);
-            }
+        btn.classList.add(
+            'bg-cyan-500',
+            'text-white',
+            'shadow-md'
+        );
 
-            // Addons
-            const addons = document.querySelectorAll('.calc-addon:checked');
-            addons.forEach(addon => {
-                total += parseInt(addon.dataset.price);
-            });
 
-            // Format to IDR
-            const formatted = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(total);
-            document.getElementById('totalPrice').innerText = formatted;
-        }
+        // Filter project
 
-        // Event Listeners for Estimator Inputs
-        document.querySelectorAll('.calc-input, .calc-addon').forEach(input => {
-            input.addEventListener('change', calculatePrice);
-        });
+        const filter =
+            btn.dataset.filter;
 
-        // Send Calculator Order to WhatsApp
-        function sendCalcToWA() {
-            const selectedType = document.querySelector('input[name="webType"]:checked');
-            const typeText = selectedType.closest('label').querySelector('h4').innerText;
-            const priceText = document.getElementById('totalPrice').innerText;
 
-            let addonsList = [];
-            document.querySelectorAll('.calc-addon:checked').forEach(addon => {
-                addonsList.push(addon.dataset.name);
-            });
+        projectCards.forEach(card => {
 
-            let addonMessage = addonsList.length > 0 ? addonsList.join(', ') : 'Tanpa Tambahan Opsional';
+            if (
+                filter === 'all' ||
+                card.dataset.category === filter
+            ) {
 
-            let msg = `Halo Badarudin (BiipSite Digital),\n\nSaya ingin memesan website berdasarkan simulasi kalkulator di website:\n\n• *Jenis Website*: ${typeText}\n• *Fitur Tambahan*: ${addonMessage}\n• *Estimasi Total*: ${priceText}\n\nMohon informasi diskon dan waktu pengerjaannya. Terima kasih!`;
+                card.style.display = 'flex';
 
-            window.open(`https://wa.me/62881080698977?text=${encodeURIComponent(msg)}`, '_blank');
-        }
-
-        // Direct WhatsApp Contact Form
-        function sendContactWA(e) {
-            e.preventDefault();
-            const name = document.getElementById('senderName').value;
-            const org = document.getElementById('senderOrg').value || '-';
-            const project = document.getElementById('senderProject').value;
-            const message = document.getElementById('senderMessage').value;
-
-            let text = `Halo Badarudin (BiipSite Digital),\n\nSaya menghubungi Anda dari Form Kontak Website Portofolio:\n\n• *Nama*: ${name}\n• *Instansi/Usaha*: ${org}\n• *Jenis Proyek*: ${project}\n• *Detail Keperluan*: ${message}\n\nMohon dibantu informasi selengkapnya.`;
-
-            window.open(`https://wa.me/62881080698977?text=${encodeURIComponent(text)}`, '_blank');
-        }
-
-        // Dark / Light Theme Toggle Script
-        const themeToggleBtn = document.getElementById('themeToggle');
-        
-        // Default to dark mode or check localStorage
-        if (localStorage.theme === 'light') {
-            document.documentElement.classList.remove('dark');
-        } else {
-            document.documentElement.classList.add('dark');
-        }
-
-        themeToggleBtn.addEventListener('click', () => {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.theme = 'light';
             } else {
-                document.documentElement.classList.add('dark');
-                localStorage.theme = 'dark';
+
+                card.style.display = 'none';
+
             }
+
         });
 
-        // Mobile Menu Navigation Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
+    });
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+});
+
+
+// =========================================================
+// PRICE CALCULATOR
+// =========================================================
+
+function calculatePrice() {
+
+    let total = 0;
+
+
+    // -----------------------------------------------------
+    // BASE PRICE
+    // -----------------------------------------------------
+
+    const selectedType =
+        document.querySelector(
+            'input[name="webType"]:checked'
+        );
+
+
+    if (selectedType) {
+
+        total += parseInt(
+            selectedType.dataset.price,
+            10
+        );
+
+    }
+
+
+    // -----------------------------------------------------
+    // ADDONS
+    // -----------------------------------------------------
+
+    const addons =
+        document.querySelectorAll(
+            '.calc-addon:checked'
+        );
+
+
+    addons.forEach(addon => {
+
+        total += parseInt(
+            addon.dataset.price,
+            10
+        );
+
+    });
+
+
+    // -----------------------------------------------------
+    // FORMAT IDR
+    // -----------------------------------------------------
+
+    const formatted =
+        new Intl.NumberFormat(
+            'id-ID',
+            {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            }
+        ).format(total);
+
+
+    const totalPrice =
+        document.getElementById('totalPrice');
+
+
+    if (totalPrice) {
+
+        totalPrice.innerText = formatted;
+
+    }
+
+}
+
+
+// =========================================================
+// CALCULATOR EVENT LISTENERS
+// =========================================================
+
+document
+    .querySelectorAll(
+        '.calc-input, .calc-addon'
+    )
+    .forEach(input => {
+
+        input.addEventListener(
+            'change',
+            calculatePrice
+        );
+
+    });
+
+
+// =========================================================
+// SEND CALCULATOR TO WHATSAPP
+// =========================================================
+
+function sendCalcToWA() {
+
+    const selectedType =
+        document.querySelector(
+            'input[name="webType"]:checked'
+        );
+
+
+    if (!selectedType) return;
+
+
+    const parentLabel =
+        selectedType.closest('label');
+
+
+    const typeHeading =
+        parentLabel
+            ? parentLabel.querySelector('h4')
+            : null;
+
+
+    const typeText =
+        typeHeading
+            ? typeHeading.innerText
+            : selectedType.value;
+
+
+    const priceElement =
+        document.getElementById('totalPrice');
+
+
+    const priceText =
+        priceElement
+            ? priceElement.innerText
+            : '-';
+
+
+    let addonsList = [];
+
+
+    document
+        .querySelectorAll('.calc-addon:checked')
+        .forEach(addon => {
+
+            addonsList.push(
+                addon.dataset.name
+            );
+
         });
 
-        document.querySelectorAll('.mobile-nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
 
-        // Initialize Calculator Price on Page Load
-        calculatePrice();
+    const addonMessage =
+        addonsList.length > 0
+            ? addonsList.join(', ')
+            : 'Tanpa Tambahan Opsional';
+
+
+    const msg =
+`Halo Badarudin (BiipSite Digital),
+
+Saya ingin memesan website berdasarkan simulasi kalkulator di website:
+
+• *Jenis Website*: ${typeText}
+• *Fitur Tambahan*: ${addonMessage}
+• *Estimasi Total*: ${priceText}
+
+Mohon informasi diskon dan waktu pengerjaannya. Terima kasih!`;
+
+
+    window.open(
+        `https://wa.me/62881080698977?text=${encodeURIComponent(msg)}`,
+        '_blank'
+    );
+
+}
+
+
+// =========================================================
+// DIRECT WHATSAPP CONTACT FORM
+// =========================================================
+
+function sendContactWA(e) {
+
+    e.preventDefault();
+
+
+    const name =
+        document.getElementById('senderName').value;
+
+
+    const org =
+        document.getElementById('senderOrg').value || '-';
+
+
+    const project =
+        document.getElementById('senderProject').value;
+
+
+    const message =
+        document.getElementById('senderMessage').value;
+
+
+    const text =
+`Halo Badarudin (BiipSite Digital),
+
+Saya menghubungi Anda dari Form Kontak Website Portofolio:
+
+• *Nama*: ${name}
+• *Instansi/Usaha*: ${org}
+• *Jenis Proyek*: ${project}
+• *Detail Keperluan*: ${message}
+
+Mohon dibantu informasi selengkapnya.`;
+
+
+    window.open(
+        `https://wa.me/62881080698977?text=${encodeURIComponent(text)}`,
+        '_blank'
+    );
+
+}
+
+
+// =========================================================
+// DARK / LIGHT THEME
+// =========================================================
+
+const themeToggleBtn =
+    document.getElementById('themeToggle');
+
+
+if (localStorage.theme === 'light') {
+
+    document.documentElement.classList.remove('dark');
+
+} else {
+
+    document.documentElement.classList.add('dark');
+
+}
+
+
+if (themeToggleBtn) {
+
+    themeToggleBtn.addEventListener(
+        'click',
+        () => {
+
+            if (
+                document.documentElement.classList.contains('dark')
+            ) {
+
+                document.documentElement.classList.remove(
+                    'dark'
+                );
+
+                localStorage.theme = 'light';
+
+            } else {
+
+                document.documentElement.classList.add(
+                    'dark'
+                );
+
+                localStorage.theme = 'dark';
+
+            }
+
+        }
+    );
+
+}
+
+
+// =========================================================
+// MOBILE MENU
+// =========================================================
+
+const mobileMenuBtn =
+    document.getElementById('mobileMenuBtn');
+
+const mobileMenu =
+    document.getElementById('mobileMenu');
+
+
+if (
+    mobileMenuBtn &&
+    mobileMenu
+) {
+
+    mobileMenuBtn.addEventListener(
+        'click',
+        () => {
+
+            mobileMenu.classList.toggle(
+                'hidden'
+            );
+
+        }
+    );
+
+}
+
+
+document
+    .querySelectorAll('.mobile-nav-link')
+    .forEach(link => {
+
+        link.addEventListener(
+            'click',
+            () => {
+
+                if (mobileMenu) {
+
+                    mobileMenu.classList.add(
+                        'hidden'
+                    );
+
+                }
+
+            }
+        );
+
+    });
+
+
+// =========================================================
+// INITIALIZE CALCULATOR
+// =========================================================
+
+calculatePrice();
+
+
+// =========================================================
+// DEBUG
+// =========================================================
+
+console.log(
+    'BiipSite Digital JavaScript berhasil dimuat.'
+);
+
+console.log(
+    'Jumlah project:',
+    Object.keys(projectsData).length
+);
     </script>
 </body>
         </html>
